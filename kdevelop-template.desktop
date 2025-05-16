@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory
+Actions=InstallTemplateFile;InstallTemplateApp
+
+[Desktop Action InstallTemplateFile]
+Name=Install as KDevelop File Template
+Icon=kdevelop
+Exec=KDevFileTemplateInstall "%f"
+
+[Desktop Action InstallTemplateApp]
+Name=Install as KDevelop App Template
+Icon=kdevelop
+Exec=KDevAppTemplateInstall "%f"
+

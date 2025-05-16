@@ -1,0 +1,35 @@
+#!/bin/bash
+
+TEMPLATE=$1
+TMP=/tmp
+TEMPLATES_FILE=~/.local/share/kdevappwizard/templates/
+DIR=$(basename "$TEMPLATE")
+PATH_TEMPLATE=$(dirname "$TEMPLATE")
+
+
+# Create KDevApp templates directory, as necessary.
+
+if [ ! -d "$TEMPLATES_FILE" ]; then	mkdir -p "$TEMPLATES_FILE";	fi
+
+
+# Build tarball and move into templates directory
+
+if [ -d "$TEMPLATE" ]; then
+
+    echo "$TEMPLATE/$DIR".kdevtemplate
+    if compgen -G "$TEMPLATE/$DIR".kdevtemplate > /dev/null; then
+
+        tar -cvjf "$TMP/$DIR.tar.bz2" -C "$PATH_TEMPLATE/$DIR" .
+        mv "$TMP/$DIR.tar.bz2" "$TEMPLATES_FILE"
+
+    else
+
+        echo "$1 is not a template directory"
+
+    fi
+
+else
+
+    echo "$1 is not a directory or does not exist"
+
+fi
