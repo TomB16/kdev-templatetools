@@ -29,4 +29,4 @@ Happy coding!
 
 ![AppTemplate](https://github.com/TomB16/kdev-templatetools/blob/main/AppTemplate.png)
 
-![AppTemplate](https://github.com/TomB16/kdev-templatetools/blob/main/FileTemplate.png)
+![FileTemplate](https://github.com/TomB16/kdev-templatetools/blob/main/FileTemplate.png)
