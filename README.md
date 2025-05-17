@@ -28,3 +28,5 @@ I doubt I'm using the system as intended but I have a lot of file templates that
 Happy coding!
 
 ![AppTemplate](https://github.com/TomB16/kdev-templatetools/blob/main/AppTemplate.png)
+
+![AppTemplate](https://github.com/TomB16/kdev-templatetools/blob/main/FileTemplate.png)
