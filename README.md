@@ -26,3 +26,5 @@ App templates do not update dynamically, so you'll need to restart KDevelop to p
 I doubt I'm using the system as intended but I have a lot of file templates that could probably be snippets.  I prefer to use file templates as it's way faster and easier.  Perhaps I'm abusing this feature but KDevelop doesn't complain.
 
 Happy coding!
+
+![AppTemplate](https://github.com/TomB16/kdev-templatetools/blob/main/AppTemplate.png)
